@@ -6,7 +6,7 @@ Fiz esse projeto com o intuito de por em prática o que aprendi sobre desenvolvi
 
 👤 **Leopoldo Santiago**
 
-* LinkedIn: www.linkedin.com\/in\/leopoldo-santiago-oliveira
+* LinkedIn: https://www.linkedin.com/in/leopoldo-santiago-oliveira/
 * Gihub: https://github.com/poldosantiago
 
 
