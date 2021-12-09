@@ -1,0 +1,10 @@
+.cabecalho{
+	align-items: center;
+	display: flex;
+	background: var(--cor-azul-super-escuro);
+	height: 8vh;
+	justify-content: space-between;
+}
+
+
+

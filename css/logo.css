@@ -1,0 +1,25 @@
+.logo{
+	color: var(--cor-azul-ciano);
+	font-family: var(--font-poppins), sans-serif;
+	font-size: 1.3rem;
+	margin-left: 1rem;
+	transition: color 2s;
+}
+
+.logo:hover{
+	color: var(--cor-branco);
+	cursor: pointer;
+}
+
+
+@media screen and (min-width: 0){
+	.logo{
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.logo{
+		font-size: 1.3rem;
+	}
+}

@@ -1,0 +1,26 @@
+.botao-hamburguer{
+	margin-right:0.5rem; 
+}
+
+.botao-hamburguer div{
+	background: var(--cor-branco);
+	height: 2px;
+	margin: 8px;
+	width: 32px;
+}
+
+.botao-hamburguer:hover{
+	cursor: pointer;
+}
+
+@media screen and (min-width: 0){
+	.botao-hamburguer{
+		display: block;
+	}
+}
+
+@media screen and (min-width: 1025px){
+	.botao-hamburguer{
+		display: none;
+	}
+}

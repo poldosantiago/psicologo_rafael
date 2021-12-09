@@ -1,0 +1,37 @@
+.localizacao{
+	background: var(--cor-cinza-claro);
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+}
+
+.localizacao__botao{
+	background: var(--cor-azul-super-escuro);
+	border:none;
+	border-radius: 5px;
+	color: var(--cor-branco);
+	font-size: 1.0rem;
+	margin-top:3rem;
+	padding: 1rem 5rem;
+	text-align:center;
+	text-decoration: none;
+	transition: background 1s;
+	width:8rem;
+}
+
+.localizacao__botao:hover{
+	color: var(--cor-branco);
+	background: var(--cor-azul-bebe);
+}
+
+@media screen and (min-width: 0){
+	.localizacao{
+		padding: 3rem 0rem;
+	}		
+}
+
+@media screen and (min-width: 768px){
+	.localizacao{
+		padding: 5rem 5rem 3rem;
+	}	
+}

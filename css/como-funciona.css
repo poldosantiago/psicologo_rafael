@@ -1,0 +1,116 @@
+.como-funciona{
+	background: var(--cor-branco);
+	padding: 5rem;
+}
+
+.como-funciona__lista{
+	display: flex;
+}
+
+.como-funciona__item{
+	cursor: pointer;
+	flex-grow: 1;
+	height: 10rem;
+	padding-top: 2rem;
+	text-align: center;
+	transition: padding 1s;
+}
+
+.como-funciona__item:hover .como-funciona__sub-titulo,
+.como-funciona__item:hover .material-icons{
+	color: var(--cor-azul-super-escuro);
+}
+
+.como-funciona__sub-titulo{
+	color: var(--cor-azul-escuro);
+	font-size: 1.2rem;
+	margin-top: 0.5rem;
+	transition: color 1s;
+}
+
+
+/*Início Popover*/
+.como-funciona__popover > summary:focus {
+  outline: none;
+}
+
+.como-funciona__popover > summary {
+  list-style: none; /*tira o tracinho do sumário*/
+  position:relative;
+}
+
+.como-funciona__popover {
+  position: relative;
+}
+.como-funciona__popover > summary + * {
+  position: absolute;
+}
+
+.como-funciona__popover.--up > summary + * {
+  bottom: calc(5.5rem + 100%);
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.como-funciona__popover.--bottom > summary + * {
+  top: calc(1rem + 100%);
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.como-funciona__popover > div{
+	background: var(--cor-azul-super-escuro);
+	color: var(--cor-branco);
+	padding: 1rem;
+	width: 400px;
+
+	/*coloquei isso aqui para que a descrição sobreponha os outros elementos*/
+	position:absolute; 
+	z-index: 1;
+}
+
+/*esse pseudo elemento cria o triangulo em cima da div*/
+.como-funciona__popover > div:before {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  right: calc(50% - 10px);
+  top: -8px;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent  var(--cor-azul-super-escuro) transparent;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+/*Fim Popover*/
+
+@media screen and (min-width: 0){
+	.como-funciona__lista{
+		flex-direction: column;
+	}
+
+	.como-funciona__item{
+		margin-bottom: 1rem;
+	}
+
+	.como-funciona__popover > div{
+		width: 250px;
+	
+	}
+}
+
+@media screen and (min-width: 0) and (orientation: landscape){
+	.como-funciona__lista{
+		flex-direction: row;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.como-funciona__lista{
+		flex-direction: row;
+	}
+
+	.como-funciona__item{
+		margin-bottom: 0rem;
+	}
+}

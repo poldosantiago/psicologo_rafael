@@ -1,0 +1,27 @@
+.icones-navegacao-fixo{
+	bottom:0.5rem;
+	position: fixed;
+	right:2rem;
+	z-index: 20;
+}
+
+.icones-navegacao-fixo__item:first-child{
+	margin-bottom: 3rem;
+}
+
+.icones-navegacao-fixo__imagem{
+	height: 100px;
+	width: 100px;
+}
+
+@media screen and (min-width: 0){
+	.icones-navegacao-fixo--mobile{
+		display: block;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.icones-navegacao-fixo--mobile{
+		display: none;
+	}
+}

@@ -1,0 +1,48 @@
+:root{
+	--cor-azul-bebe: #1e9dc8;
+	--cor-azul-ciano: #2fcee2;
+	--cor-azul-escuro: #0b527d;
+	--cor-azul-super-escuro: #101024;
+	--cor-branco: #FDFDFD;
+	--cor-cinza:#808080;
+	--cor-cinza-claro:#eeeeee;
+	--cor-preto:#303030;
+	--cor-verde-alerta-borda:#badbcc;
+	--cor-verde-alerta-fundo:#d1e7dd;
+	--cor-verde-alerta-texto:#0f5132;
+	--cor-verde-formulario-valido: green;
+	--cor-vermelho-alerta-borda:#f5c2c7;
+	--cor-vermelho-alerta-fundo:#f8d7da;
+	--cor-vermelho-alerta-texto:#842029;
+	--cor-vermelho-formulario-invalido:#f00;
+	--cor-vermelho-formulario-necessario:#FF4500;
+
+	/*Google fonts*/
+	--font-poppins: 'Poppins';
+}
+
+html{
+	font-family: var(--font-poppins), sans-serif;
+	scroll-behavior: smooth;
+}
+
+.sessao__titulo-principal{
+	color: var(--cor-azul-escuro);
+	font-family: var(--font-poppins), sans-serif;
+	font-weight: 700;
+	margin-bottom: 3rem;
+	text-align: center;
+	width: 100%;
+}
+
+@media screen and (min-width: 0){
+	.sessao__titulo-principal{
+		font-size: 4rem;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.sessao__titulo-principal{
+		font-size: 5rem;
+	}
+}

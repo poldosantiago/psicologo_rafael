@@ -1,0 +1,12 @@
+.contato{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding:2rem 1rem;
+}
+
+
+.contato__texto{
+	color:var(--cor-azul-escuro);
+	margin-bottom: 2rem;
+}

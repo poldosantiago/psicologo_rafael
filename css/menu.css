@@ -1,0 +1,64 @@
+.menu__item{
+	margin-left: 1rem;
+}
+
+.menu__link{
+	color:var(--cor-azul-bebe);
+	text-decoration: none;
+	transition: color 1s;	
+}
+
+.menu__item:hover .menu__link{
+	color: var(--cor-azul-ciano);
+}
+
+@media screen and (min-width: 0){
+	.menu__lista{
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		right: 0;
+		top:8vh;
+	}
+
+	/*uso esse para abrir  o menu hamburguer */
+	.menu__lista.--ativo{
+		display: block;
+	}
+
+	.menu__item{
+		background: var(--cor-azul-super-escuro);
+		border-bottom: 1px solid var(--cor-branco);
+		padding:1rem 1rem;
+		text-align: center;
+	}
+	.menu__item:last-child{
+		border-bottom: none;
+	}	
+
+	.menu__item.--oculto-mobile{
+		display: none;	
+	}
+}
+
+@media screen and (min-width: 1025px){
+	.menu__lista{
+		align-items: flex-start;
+		display: flex;
+		flex-direction: row;
+		padding: 0 1rem;
+		position: static;
+	}
+
+	.menu__item{
+		background: var(--cor-azul-super-escuro);
+		border-bottom: none;
+		display: flex;
+		padding:0rem;
+		text-align: center;
+	}
+
+	.menu__item.--oculto-mobile{
+		display: inline;	
+	}
+}

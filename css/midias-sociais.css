@@ -1,0 +1,11 @@
+.midias-sociais__lista{
+	display: flex;
+}
+
+.midias-sociais__item{
+	margin-left: 2rem;
+}
+
+.midias-sociais__item:first-child{
+	margin-left: 0;
+}

@@ -1,0 +1,90 @@
+.banner__imagem{
+	background: url('../img/fundos/paisagem.jpg') no-repeat center / cover;
+	height: 92vh;
+	width: 100%;
+}
+
+.banner__titulo{
+	color: var(--cor-azul-super-escuro);
+	font-family: var(--font-poppins), sans-serif;
+	width: 100%;
+	text-shadow: 3px 3px 3px rgba(255,255,255,0.6);
+}
+
+.banner__descricao{
+	color: var(--cor-branco);
+	margin-top:1rem;
+	width: 100%;
+	text-shadow: 3px 3px 3px rgba(0,0,0,0.8);
+}
+
+
+.banner__botao{
+	background: var(--cor-azul-super-escuro);
+	border:none;
+	border-radius: 5px;
+	color: var(--cor-branco);
+	font-size: 1.0rem;
+	text-decoration: none;
+	transition: background 1s;
+}
+
+.banner__botao:hover{
+	background: var(--cor-azul-bebe);
+	color: var(--cor-branco);
+}
+
+.banner__titulo,
+.banner__descricao,
+.banner__botao{
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	transform: translate(-50%,-50%); /*altera a posicao do elemento*/
+}
+
+@media screen and (min-width: 0){
+	.banner__titulo{
+		font-size: 3rem;
+		width: 100%;
+		top: 55%;
+	}
+
+	.banner__descricao{
+		font-size: 1.0rem;
+		width: 100%;
+		top: 68%;
+	}
+
+	.banner__botao{
+		padding: 1.5rem 0.5rem;
+		top: 90%;
+	}		
+}
+
+@media screen and (min-width: 0) and (orientation: landscape){
+	.banner__botao{
+		padding: 2rem 0.5rem;
+		top: 90%;
+	}		
+
+}
+
+@media screen and (min-width: 1025px){
+	.banner__titulo{
+		font-size: 5rem;
+		top: 30%;
+	}
+
+	.banner__descricao{
+		top: 35%;
+		font-size: 1.5rem;
+	}
+
+	.banner__botao{
+		font-size: 1.2rem;
+		padding: 1.5rem 1rem;
+		top: 50%;
+	}	
+
+}

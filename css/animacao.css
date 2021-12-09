@@ -1,0 +1,48 @@
+[data-anime]{
+	opacity: 0;
+	transition: 2s;
+}
+
+[data-anime="left"]{
+	transform: translate3d(-50px, 0,0);
+}
+
+[data-anime="right"]{
+	transform: translate3d(50px, 0,0);
+}
+
+[data-anime="top"]{
+	transform: translate3d(0, -50px,0);
+}
+
+[data-anime].--animate{
+	opacity: 1;
+	transform: translate3d(0, 0,0);
+}
+
+[data-anime="sombra"]:after{
+	content:"";
+	background:rgba(0,0,0,.1);
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:1;
+	transition: background 3s;
+}
+
+[data-anime="sombra"].--animate:after{
+	background:rgba(0,0,0,.5);
+}
+
+/*
+Exemplo:;
+transform: translate3d(EIXO_X, EIXO_Y, EIXO_Z);
+
+EIXO_Z: para efeito 3d. não to usando;
+
+Fonte:
+https://www.youtube.com/watch?v=pKTOT63X9XQ
+
+*/
